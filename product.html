@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowell Electric</title>
+  <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="img/llg.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+        /* marquee */
+        .marquee-container {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      color: #37b6ff;
+      font-size: 1.2rem;
+      font-family: 'Arial', sans-serif;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+
+
+    body {
+      background-color: #000000e1;
+      /* Grey background */
+    }
+
+    .team-text h5 {
+      color: #000000;
+      /* Dark text for headings */
+    }
+
+    .navbar {
+      --bs-navbar-toggler-border-color: #37b6ff;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2855, 182, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .bg-primary {
+      background-color: rgb(255, 0, 0);
+      /* Button background color */
+    }
+
+    .bg-primary button {
+      color: black;
+      /* Button text color */
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-primary button:hover {
+      background: linear-gradient(45deg, black, #000000);
+      color: rgb(255, 255, 255);
+    }
+
+    /*** Team ***/
+    .team-item img {
+      transition: .5s;
+    }
+
+    .team-item:hover img {
+      transform: scale(1.0);
+    }
+
+    .team-item .team-text {
+      height: 90px;
+      overflow: hidden;
+    }
+
+    .team-item .team-text .bg-light,
+    .team-item .team-text .bg-primary {
+      position: relative;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: .5s;
+    }
+
+    .team-item .team-text .bg-emphasis {
+      flex-direction: row;
+    }
+
+    .team-item:hover .team-text .bg-light {
+      margin-top: -90px;
+    }
+
+    .team-item .team-text .bg-emphasis .btn {
+      color: var(--primary);
+      background: #FFFFFF;
+    }
+
+    .team-item .team-text .bg-emphasis .btn:hover {
+      color: #FFFFFF;
+      /* background: var(--secondary) */
+    }
+
+    .fab {
+        
+        transform: rotateX(360deg);
+        transition: transform 0.5s;
+        display: inline-block;
+    }
+
+    .fab:hover {
+        transform: rotateX(0deg);
+    }
+
+    .footer-link {
+      color: white;
+      transition: all ease-in-out 0.5s;
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      color: rgb(13, 110, 253);
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav id="nav" class="navbar navbar-expand-lg" style="background-color: black;">
+    <div class="container" id="container">
+      <img src="img/llg.jpg" style="height: 55px; margin: 5px; " alt="">
+      <p style="font-weight: bolder; font-size: 25px; margin-top: 20px; color: white;"><span
+          style="color: rgba(13,110,253,255);">Snowell</span> Electric</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse justify-content-center abc" id="navbarSupportedContent">
+        <ul class="nav justify-content-center " id="nav-links">
+          <li class="align-content-center nav-item">
+            <a class="nav-link active text-center" aria-current="page" href="Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="contact.html">Contact Us</a>
+          </li>
+      </div>
+    </div>
+     <!-- usercount -->
+     <button type="button" class="rounded-circle bg-transparent border-0 d-none d-lg-block mx-5 position-relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(13,110,253)" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+      <span id="usercount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        99+
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+  </nav>
+  <!-- Nav Bar End-->
+
+  <!-- Crousel Start -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/dda.webp" class="d-block w-100" alt="..." style="height: 450px;">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/jk.jpeg" class="d-block w-100" alt="..." style="height: 450px;">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner.jpg" class="d-block w-100" alt="..." style="height: 450px;">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/kkkk.webp" class="d-block w-100" alt="..." style="height: 450px;">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Crousel End -->
+
+  <!-- Team Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h1 class="mb-5 text-white">Our Products</h1>
+      </div>
+      <div class="container">
+        <div class="text-center mb-5">
+          <input type="search" name="" id="searchpoduct" class="form-control" placeholder="Search Products">
+        </div>
+        <div class="row g-4">
+
+          <div class="col-lg-3 col-md-6 pcard"   data-wow-delay="0.1s" >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f12.png" alt="" height="500px">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Haier Fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalacdc" id="button  ">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/geyser/gy3.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Starco geyser</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalgeyser" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"   >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/ac/ac5.webp" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Kenwood AC</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modalkenwood" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f23.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Kitchen Fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalkitchen" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/air-cooler/ac1.jpg" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Haier air-cooler</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalcooler" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f16.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Classic Fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalacdc2" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"   >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/geyser/gy1.jpg" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Japan geyser</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modalgeyser" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"   >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f19.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Stand fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modaltable" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/machine/mc1.jpg" alt="" height="1000px">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Dawlance Machine</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalwash" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/air-cooler/ac2.jpg" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Canon air-cooler</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalcooler2" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f22.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Royal fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalbracket" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/geyser/gy2.jpg" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Hanco geyser</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalgeyser3" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f24.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Exhaust Fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalexhaust" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/ac/ac5.webp" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Orient ac</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalorientac" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"    >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/gfc/f14.png" alt="" height="1000px">
+
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Pak fan</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalacdc3" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/geyser/gy3.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Starco geyser</h5>
+                </div>
+                <div class="bg-primary">
+                  <a href="livingroom.html"><button  data-bs-toggle="modal"
+                    data-bs-target="#modalgeyser4" id="button-bedroom">More Details</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a2.webp" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Haier Refrigerator</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modalfreezer" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a10.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Haier oven</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modaloven" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a8.webp" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Shophive Juicer-machine</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modaljuiser" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a7.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">National iron-press</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalironpress1" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a11.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Delite oven</h5>
+                </div>
+                <div class="bg-primary">
+                  <button  data-bs-toggle="modal"
+                  data-bs-target="#modaloven1" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a6.webp" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Philips iron-press</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalironpress2" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/others/a3.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Gadgets Refrigerator</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalfreezer2" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 pcard"  >
+            <div class="team-item">
+              <div class="position-relative overflow-hidden">
+                <img class="img-fluid" src="img/air-cooler/ac3.jpg" alt="">
+              </div>
+              <div class="team-text">
+                <div class="bg-light">
+                  <h5 class="fw-bold mb-0">Royal Air Cooler.</h5>
+                </div>
+                <div class="bg-primary">
+                  <button data-bs-toggle="modal"
+                  data-bs-target="#modalcooler3" id="button-bedroom">More Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Team End -->
+
+
+  <!-- Modals start -->
+
+  <!--modal Acdc fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalacdc" tabindex="-1" aria-labelledby="modalacdcLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ovate Acdc Fan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Superior quality aluminum alloy construction. <br>
+            - Energy efficient Electrical Steel Sheet and 99.9% Pure Copper Wire. <br>
+            - “E” grade varnish insulation to protect from electric shock and voltage fluctuation. <br>
+            - Aerodynamically designed blades for maximum air delivery. <br>
+            - High quality paint for superior finishing. <br>
+            - Packed in strong corrugated cartons with protective thermopore. <br><br>
+            Rs.15,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal Stargo geyser -->
+  <div class="modal" data-bs-backdrop="static" id="modalgeyser" tabindex="-1" aria-labelledby="modalgeyserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-7025EL Electric Geyser
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- International Safety Standard. <br>
+            - Less Electricity Consumtion. <br>
+            - Automatic Thermostat Control. <br>
+            - Rust & Scratch Proof Powder Coated Painted Body. <br>
+            - Tank with Leak Proof Welding. <br>
+            - Imported Italian Heating Element. <br><br>
+            Rs.20,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal kenwood ac -->
+  <div class="modal" data-bs-backdrop="static" id="modalkenwood" tabindex="-1" aria-labelledby="modalkenwoodLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Chrome 1.25 Ton Inverter Split AC</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p> - AC : Inverter Mono Split <br>
+            - Cooling Capacity (Btu/h) : 14000 BTU/h <br>
+            - Function : Reversible <br><br>
+            Rs.154,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal kitchen fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalkitchen" tabindex="-1" aria-labelledby="modalkitchenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Plastic Exhaust </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- High speed Domestic Exhaust with Sleek ergonomic design to complement décor. <br>
+            - Self opening louvers for protection against birds & rain water. <br>
+            - High quality engineering plastic with paint coating, giving modern design, fashionable & elegant look.
+            <br>
+            - Suitable for window & wall mounted indoor installation. <br>
+            - Size avaliable in 8″, 10″ and 12″. <br>
+            - Fan ON-Off operations are inter-locked through pull cord. <br><br>
+            Rs.5,000/-
+          </p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal cooler -->
+  <div class="modal" data-bs-backdrop="static" id="modalcooler" tabindex="-1" aria-labelledby="modalcoolerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-6600 Deluxe DC</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Voltage: 220v DC <br>
+            - Input Voltage: 220V/175 Watts <br>
+            - Tank Capacity: 60 Litre <br>
+            - Speed: 1420 RPM <br><br>
+            Rs.22,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal Acdc2 fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalacdc2" tabindex="-1" aria-labelledby="modalacdc2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Acdc Mansion </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Superior quality aluminum alloy construction. <br>
+            - Energy efficient Electrical Steel Sheet and 99.9% Pure Copper Wire. <br>
+            - “E” grade varnish insulation to protect from electric shock and voltage fluctuation. <br>
+            - Aerodynamically designed blades for maximum air delivery. <br>
+            - High quality paint for superior finishing. <br>
+            - Packed in strong corrugated cartons with protective thermopore. <br><br>
+            Rs.9,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal geyser -->
+  <div class="modal" data-bs-backdrop="static" id="modalgeyser" tabindex="-1" aria-labelledby="modalgeyserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-706IN Instant Geyser (LPG & Natural) Elite Series </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>International Safety Standard. <br>
+            Automatic Thermostat Control. <br>
+            Rust & Scratch Proof Powder Coated Painted Body. <br>
+            Tank with Leak Proof Welding. <br>
+            Imported Italian Heating Element. <br><br>
+            Rs.19,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal table fan -->
+  <div class="modal" data-bs-backdrop="static" id="modaltable" tabindex="-1" aria-labelledby="modaltableLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">TCP Metal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Jerk free oscillation & smooth running. <br>
+            - 3 speed options & 90° horizontal oscillation. <br>
+            - Aerodynamically designed blades for maximum air delivery. <br>
+            - Energy efficient Electrical Steel Sheet and 99.9% Pure Copper Wire. <br>
+            - High quality paint for superior finishing. <br>
+            - Packed in strong corrugated cartons with protective thermopore. <br><br>
+            Rs.8,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal washmaching fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalwash" tabindex="-1" aria-labelledby="modalwashLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-399 Dryer Machine </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Performance..<br>
+            - Energy Rating: 4 Stars <br>
+            - Water Rating: 4.5 Stars <br>
+            - Maximum Spin Speed: 1400 rpm <br> <br>
+            Weight.. <br>
+            - 25 kg Net Weight <br>
+            - 23 kg Gross Weight <br>
+            - Voltage: 220v AC <br>
+            - Frequency: 50/60Hz. <br>
+            - Input Voltage: 220V/175Watts <br>
+            - Operating time: 1-15 Minutes. <br><br>
+            Rs.24,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal cooler2 fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalcooler2" tabindex="-1" aria-labelledby="modalcooler2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-6700 Supreme DC </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Voltage: 220v DC <br>
+            - Input Voltage: 220V/175 Watts <br>
+            - Tank Capacity: 55 Litre <br>
+            - Speed: 1420 RPM <br><br>
+            Rs.22.500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal bracket fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalbracket" tabindex="-1" aria-labelledby="modalbracketLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Classic 18" </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Energy efficient Electrical Steel Sheet and 99.9% Pure Copper Wire. <br>
+            - High quality paint for superior finishing. <br>
+            - Jerk free oscillation <br>
+            - 3 speed options and 90 Degree horizontal oscillation <br>
+            - Aerodynamically designed Aluminum blades for maximum air delivery <br>
+            - Packed in strong corrugated cartons with protective thermopore <br><br>
+            Rs.7,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal geyser3 -->
+  <div class="modal" data-bs-backdrop="static" id="modalgeyser3" tabindex="-1" aria-labelledby="modalgeyser3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-7015 Electric Geyser </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- International Safety Standard. <br>
+            - Less Electricity Consumtion. <br>
+            - Automatic Thermostat Control. <br>
+            - Rust & Scratch Proof Powder Coated Painted Body. <br>
+            - Tank with Leak Proof Welding. <br>
+            - Imported Italian Heating Element. <br><br>
+            Rs.23,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal exhaust fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalexhaust" tabindex="-1" aria-labelledby="modalexhaustLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Metal Exhaust Round </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Dynamically balanced impellers for smooth & vibration-free operation. <br>
+            - Turbo profile blades for higher air delivery & rigid frame with rubber mountings for silent operation.
+            <br>
+            - Totally enclosed, highly efficient heavy duty motor designed to suit voltage/supply fluctuation. <br>
+            - Epoxy enamel coating with specially pre-treated components for better resistance to corrosion and acid
+            alkali fumes. <br>
+            - Size avaliable in 6″, 8″, 10″, 12″, 14″, 16″, 18″, 20″ and 24″ <br>
+            - Pressure die casted aluminum rotor mounted on pre-lubricated double ball bearing for maintenance free
+            running. <br><br>
+            Rs.9,500/-
+          </p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal orient ac -->
+  <div class="modal" data-bs-backdrop="static" id="modalorientac" tabindex="-1" aria-labelledby="modalorientacLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">1.5 Ton Smartron Pro Ultra Black DC Inverter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- T3 tropicalized inverter <br>
+            - Japanese PCB Kit <br>
+            - Auto Pilot <br>
+            - Auto Clean Sterilization System <br>
+            - For All Weathers Heat & Cool <br>
+            - 100 % Pure copper <br>
+            - Turbo mode <br>
+            - Low Noise Operations <br>
+            - Gold Fin - Anti Rust Coating <br>
+            - Catechin filters <br><br>
+            Rs.159.500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal Acdc3 fan -->
+  <div class="modal" data-bs-backdrop="static" id="modalacdc3" tabindex="-1" aria-labelledby="modalacdc3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Superior Fan </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Superior quality aluminum alloy construction. <br>
+            - Energy efficient Electrical Steel Sheet and 99.9% Pure Copper Wire. <br>
+            - “E” grade varnish insulation to protect from electric shock and voltage fluctuation. <br>
+            - Aerodynamically designed blades for maximum air delivery. <br>
+            - High quality paint for superior finishing. <br>
+            - Packed in strong corrugated cartons with protective thermopore. <br><br>
+            Rs.10,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal geyser4  -->
+  <div class="modal" data-bs-backdrop="static" id="modalgeyser4" tabindex="-1" aria-labelledby="modalgeyser4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-40EL Electric Geyser </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Constant Hot Water <br>
+            - Impoted Heating Element <br>
+            - Safety Protection <br>
+            - Energy Saving. <br><br>
+            Rs.20,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal freezer -->
+  <div class="modal" data-bs-backdrop="static" id="modalfreezer" tabindex="-1" aria-labelledby="modalfreezerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Black & Decker 1.7 cu. ft. Compact Refrigerator Mini Fridge with Freezer </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Full-width Freezer Compartment with Ice Cube Tray <br>
+            - 1 Full-width Slide-out Glass Shelf <br>
+            - 1 Full-width and 1 Half-width Door Storage Shelf <br>
+            - Accommodates 1 Liters and Tall Bottles <br>
+            - Adjustable Thermostat Control <br>
+            - Reversible Door & SpaceReversible Door & Space Saving Flat Back Design Saving Flat Back Design <br>
+            - Adjustable Leveling Legs <br>
+            - Manual Defrost <br>
+            - Recessed Door Handle <br>
+            - R600a Refrigerant, No Ozone Depletion <br>
+            - ENERGY STAR Certified - Most Efficient 2020. <br><br>
+            Rs.44,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal oven -->
+  <div class="modal" data-bs-backdrop="static" id="modaloven" tabindex="-1" aria-labelledby="modalovenLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Haier Built-in Oven DBG 21810 B</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Electric touch control <br>
+            - Automatic body temperature. <br>
+            - 56 Litres Oven capacity <br>
+            - Low Temperature Cooking <br>
+            - Tamchini coated Inner Body <br>
+            - Imported thermostat with auto timer <br>
+            - 100% Tempered Double Glass <br>
+            - Heated element for fine baking <br>
+            - Imported convection fans Dimensions: W-23.5” D-21.5” H-23.5”. <br><br>
+            Rs.68,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal juiser -->
+  <div class="modal" data-bs-backdrop="static" id="modaljuiser" tabindex="-1" aria-labelledby="modaljuiserLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SOKANY 2 in 1 MultiFunctional Electric Blender Smoothie Maker Mixer Juicer Machine
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- 2L/2.5L Travel Thermos Flask Outdoor Stainless Steel Thermos 12 Hours Working <br>
+            - 100w LED Solar Outdoor Lamp Dust Proof Street Light <br>
+            - New Design Solar Power Garden Disc Lights. <br><br>
+            Rs.9,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ironpress1 -->
+  <div class="modal" data-bs-backdrop="static" id="modalironpress1" tabindex="-1" aria-labelledby="modalironpress1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">National PerfectCare Steam iron 2500W
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- 1750 W <br>
+            - Shock Steam up to 100 g/min <br>
+            - NContinuous Steam up to 12 g/min <br>
+            - 220 ml water tank capacity <br>
+            - Non-Stick Soleplate <br>
+            - Anti-calc & Self-clean <br>
+            - Vertical steam <br>
+            - Dry Ironing <br><br>
+            Rs.10,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal oven1 -->
+  <div class="modal" data-bs-backdrop="static" id="modaloven1" tabindex="-1" aria-labelledby="modaloven1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">45 liter Electric Oven / Baking Oven / Convection Electric Oven / toaster oven /
+            Rotisserie Oven with Kebab Grill
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Adjustable thermostat from : 100C to 250 Degree Centigrade<br>
+            - Timer: 60 Minutes with suditory signal<br>
+            - Heat resistant tempered glass window<br>
+            - Glass door handle <br>
+            - Power cord and plug <br><br>
+            Rs.22,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal ironpress2 -->
+  <div class="modal" data-bs-backdrop="static" id="modalironpress2" tabindex="-1" aria-labelledby="modalironpress2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Philips Steam Iron DWSI-7282 Steam Iron
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Compact Design<br>
+            - Steam Iron In green<br>
+            - 200ml Water Tank<br>
+            - Ceramic Soleplate <br>
+            - Auto Shut Off <br>
+            - Shot Of Steam <br>
+            - Continuous Steam <br>
+            - Self Clean. <br>
+            Rs.9,000/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal freezer2 -->
+  <div class="modal" data-bs-backdrop="static" id="modalfreezer2" tabindex="-1" aria-labelledby="modalfreezer2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Smeta 3.2cuft 91L Home Hotels Price Small Fridge Mini Refrigerator
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Capacity: 91L / 3.2 Cuft<br>
+            - Full-width Chiller Chamber <br>
+            - Mechanical Thermostat<br>
+            - Transparent Door Racks <br>
+            - Crisper Drawer with Glass Cover <br>
+            - Adjustable Glass Shelf or Wire Shelf. <br><br>
+            Rs.54,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal cooler3 -->
+  <div class="modal" data-bs-backdrop="static" id="modalcooler3" tabindex="-1" aria-labelledby="modalcooler3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">GF-6600 Deluxe Plus AC
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>- Voltage: 220v AC <br>
+            - Input Voltage: 220V/175 Watts <br>
+            - Tank Capacity: 55 Litre <br>
+            - Speed: 1420 RPM <br><br>
+            Rs.27,500/-</p>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <a href="contact.html" type="button" class="btn btn-dark">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals end -->
+
+<!-- Marquee -->
+
+<div class="marquee-container" id="marqueeContainer">
+  <div class="marquee">
+    🎉 Big Sale Alert! 🎉 Enjoy up to 50% OFF on all products! Shop now and grab your favorites before they're gone! 🛒✨
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer id="footer" class="text-center text-lg-start  text-muted" data-aos="fade-up" data-aos-duration="1000" style="background-color: black;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center">
+      <!-- Left -->
+      <div class="mx-auto">
+       
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="mt-3" style="font-size: 20px;">
+          <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-facebook-f" style="color: rgb(13, 110, 253);"></i>
+          </a>
+          <a href="https://twitter.com/i/flow/login" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-twitter" style="color: rgb(13, 110, 253);"></i>
+          </a>
+          <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp0NmuQ3tEkg0ANXbQZN2BxSMCzfdoVIeWg4UlYivKGyfaFukHJElZSVG7d2incy5cpxFhF7&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-821940488%3A1705991549232520&theme=glif"
+            target="_blank" class="me-4 text-reset">
+            <i class="fab fa-google" style="color: rgb(13, 110, 253);"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-instagram" style="color: rgb(13, 110, 253);"></i>
+          </a>
+          <a href="https://www.linkedin.com/login" target="_blank" class="me-4 text-reset">
+            <i class="fab fa-linkedin" style="color: rgb(13, 110, 253);"></i>
+          </a>
+          <a href="https://github.com/login" target="_blank" class=" me-4 text-reset " target="_blank">
+            <i class="fab fa-github" style="color: rgb(13, 110, 253);"></i>
+          </a>
+        </div>
+      </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4 col-sm-6">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i><img src="img/llg.jpg" style="width: 35px; height: 35px;" alt="" srcset=""> </i>
+              <span style="color: rgba(13,110,253,255);">Snowell</span> Electric
+            </h6>
+            <p>
+              Our experienced team is dedicated to providing exceptional customer service, ensuring that
+              you get the
+              right
+              lighting solutions for your needs. Whether you’re looking to brighten up your home or office
+              space, we’ve
+              got
+              the perfect LED lights for you.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 col-sm-6">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links <br><i class="fa-solid fa-minus"></i>
+            </h6>
+            <p>
+              <a href="product.html" class="footer-link">Products</a>
+            </p>
+            <p>
+              <a href="about.html" class="footer-link">About Us</a>
+            </p>
+            <p>
+              <a href="contact.html" class="footer-link">Contact Us</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-3 col-xl-2 mx-auto mb-4 col-sm-6">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Email <br><i class="fa-solid fa-minus"></i>
+            </h6>
+            <p>For More Feedback</p>
+            <input type="email" name="" class="form-control mx-auto" id="" placeholder="Email"
+              style="background-color: white; border-radius: 8px; width: 300px;">
+            <button class="btn mt-3 btn-outline-primary">Send</button>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color: white;">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="project1.html"><span style="color: rgba(13,110,253,255);">Snowell</span>
+      Electric</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <script>
+    $("#searchpoduct").keyup(function () {
+
+      let searchText = $(this).val().toLowerCase()
+
+      // console.log(searchText)
+
+      $(".pcard").filter(function () {
+
+        let liText = $(this).find("h5").text().toLowerCase();
+
+        if (liText.indexOf(searchText) > -1) {
+          $(this).show()
+        }
+        else {
+          $(this).hide()
+        }
+      })
+
+    })
+  </script>
+    <script>
+      for (var i = 1; i <= 1000; i++) {
+        (function (index) {
+          setTimeout(function () {
+            document.getElementById('usercount').innerHTML = index;
+          }, index * 3);
+        })(i);
+      }
+    </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+   <script>
+    const marqueeContainer = document.getElementById('marqueeContainer');
+    const footer = document.getElementById('footer');
+
+    function checkMarqueePosition() {
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (footerRect.top <= windowHeight) {
+        marqueeContainer.style.opacity = '0';
+      } else {
+        marqueeContainer.style.opacity = '1';
+      }
+    }
+
+    window.addEventListener('scroll', checkMarqueePosition);
+  </script>
+</body>
+
+</html>

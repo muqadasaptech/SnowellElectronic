@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowell Electric</title>
+    <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/llg.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <style>
+        .navbar {
+            --bs-navbar-toggler-border-color: #37b6ff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2855, 182, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .footer-link {
+            color: white;
+            transition: all ease-in-out 0.5s;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: rgb(13, 110, 253);
+
+        }
+
+        .fab {
+            transform: rotateX(360deg);
+            transition: transform 0.5s;
+            display: inline-block;
+        }
+
+        .fab:hover {
+            transform: rotateX(0deg);
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class=""
+    style="background-color: black; color: white;">
+    <!-- Nav bar Start -->
+    <nav id="nav" class="navbar navbar-expand-lg" style="background-color: black;">
+        <div class="container" id="container">
+            <img src="img/llg.jpg" style="height: 55px; margin: 5px; " alt="">
+            <p style="font-weight: bolder; font-size: 25px; margin-top: 20px; color: white;"><span
+                    style="color: rgba(13,110,253,255);">Snowell</span> Electric</p>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center abc" id="navbarSupportedContent">
+                <ul class="nav justify-content-center " id="nav-links">
+                    <li class="align-content-center nav-item">
+                        <a class="nav-link active text-center" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="contact.html">Contact Us</a>
+                    </li>
+            </div>
+        </div>
+
+        <!-- usercount -->
+        <button type="button" class="rounded-circle bg-transparent border-0 d-none d-lg-block mx-5 position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(13,110,253)"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+            <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </nav>
+    <!-- Nav Bar End-->
+    <div class=" text-white py-5" style="background-color: black; ">
+        <div class="container py-5 ">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="text-center pb-5">
+                        <nav>
+                        </nav>
+                        <h1 class="fw-bold display-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+                            <span style="color: rgba(13,110,253,255);">About</span> Us
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col fw-bold">
+                <h1 style="text-align: center; margin-top: 10px; font-size: 40px; color: rgba(13,110,253,255);">
+                    Introduction</h1>
+                <p style="text-align: justify; font-size: 17px; font-weight:300">Snowell
+                    Electric, founded in 2010, has quickly
+                    established itself as a leader in the consumer
+                    electronics market. With a mission to innovate and enhance everyday life through technology, the
+                    company offers a wide range of products, including smartphones, laptops, home appliances, and
+                    wearable devices. Headquartered in Silicon Valley, Snowell Electric combines cutting-edge technology
+                    with sleek design, appealing to tech-savvy consumers around the globe.</p><br><br>
+                <h1 style="text-align: center; margin-top: 10px; font-size: 40px; color: rgba(13,110,253,255);  ">
+                    Product Range and Innovation</h1>
+                <p style=" text-align: justify; font-size: 17px; font-weight:300">Snowell
+                    Electric, prides itself on its diverse product
+                    lineup. The flagship smartphone, the XPhone, features state-of-the-art camera technology and robust
+                    performance, making it a favorite among professionals and casual users alike. In addition to mobile
+                    devices, the company has developed an award-winning line of laptops that cater to gamers, creatives,
+                    and business professionals. The integration of artificial intelligence and machine learning in their
+                    devices has set new standards for user experience and performance.</p><br><br><br>
+                <h1 style="text-align: center; margin-top: 10px; font-size: 40px; color: rgba(13,110,253,255); ">
+                    Sustainability and Corporate Responsibility</h1>
+                <p style="text-align: justify; font-size: 17px; font-weight:300">Snowell
+                    In an era where environmental consciousness is paramount, Snowell Electric is committed to
+                    sustainable practices. The company has implemented eco-friendly manufacturing processes, reducing
+                    waste and energy consumption. Furthermore, it actively participates in recycling programs and
+                    promotes the use of renewable materials in its products. This dedication to sustainability not only
+                    helps protect the planet but also resonates with environmentally aware consumers, enhancing brand
+                    loyalty.</p><br><br><br>
+                <h1 style="text-align: center; margin-top: 10px; font-size: 40px; color: rgba(13,110,253,255); ">
+                    Global Reach and Market Expansion</h1>
+                <p style="text-align: justify; font-size: 17px; font-weight:300">Snowell
+                    With a focus on international markets, Snowell Electric has expanded its operations to over 50
+                    countries. Strategic partnerships with local retailers and e-commerce platforms have facilitated
+                    this growth, ensuring that their products are accessible worldwide. The company continually assesses
+                    market trends and consumer needs, allowing it to adapt its strategies and offerings accordingly.
+                    This proactive approach has positioned Snowell Electric as a formidable competitor in the global
+                    electronics landscape.</p><br><br><br>
+                <h1 style="text-align: center; margin-top: 10px; font-size: 40px; color: rgba(13,110,253,255); ">
+                    Future Outlook</h1>
+                <p style="text-align: justify; font-size: 17px; font-weight:300">Snowell
+                    Looking ahead, Snowell Electric is poised for continued growth and innovation. With investments in
+                    research and development, the company aims to explore emerging technologies such as augmented
+                    reality and smart home integration. As consumer demands evolve, Snowell Electric is dedicated to
+                    staying ahead of the curve, ensuring that it remains a trusted brand synonymous with quality and
+                    innovation in the electronics industry.</p><br><br><br>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1 style="text-align: center; padding-bottom: 10px; font-weight: bold;"><span
+                style="color: rgba(13,110,253,255);">People</span> Review's</h1>
+        <div class="row justify-content-center g-4 g-md-5">
+            <div class="col-lg-6 col-12 aos-init aos-animate" data-aos="fade-right" data-aos-duration="500">
+                <div class="bg-black text-white rounded-4 shadow p-5 d-flex align-items-start gap-4 h-100">
+                    <img src="img/p2p.jpg" alt="testimonial" class="img-fluid rounded-circle testimonial-img"
+                        style="height: 90px;">
+                    <div>
+                        <p class="text-secondary-emphasis pb-4 lead">
+                            "I recently purchased a laptop from Snowell Electrics, and I couldn't be happier! The
+                            customer
+                            service was outstanding—staff were knowledgeable and helped me choose the right model for my
+                            needs. The laptop itself runs smoothly, and battery life is impressive.</p>
+                        <div>
+                            <h6 class="fw-bold mb-1">Sarah T.</h6>
+                            <p class="text-muted mb-0">Random customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 aos-init aos-animate" data-aos="fade-left" data-aos-duration="700">
+                <div class="bg-black text-white rounded-4 shadow p-5 d-flex align-items-start gap-4 h-100">
+                    <img src="img/p3p.jpg" alt="testimonial" class="img-fluid rounded-circle testimonial-img"
+                        style="height: 90px;">
+                    <div>
+                        <p class="text-secondary-emphasis pb-4 lead">"I just got a new tablet from Snowell Electrics,
+                            and I’m blown away by its
+                            performance! The screen is super responsive, and the battery life lasts all day. The staff
+                            were incredibly
+                            knowledgeable and helped me choose the right model for my needs.</p>
+                        <div>
+                            <h6 class="fw-bold mb-1">David P.</h6>
+                            <p class="text-muted mb-0">Random customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+                <div class="bg-black text-white rounded-4 shadow p-5 d-flex align-items-start gap-4 h-100">
+                    <img src="img/p4p.jpg" alt="testimonial" class="img-fluid rounded-circle testimonial-img"
+                        style="height: 90px;">
+                    <div>
+                        <p class="text-secondary-emphasis pb-4 lead">
+                            "I just bought a 4K Lcd.TV from Snowell Electrics, and it’s absolutely stunning!
+                            The picture quality is crystal clear, and the colors are so vibrant. The setup was easy, and
+                            the staff at the
+                            store were super helpful in showing me all the features."
+                        </p>
+                        <div>
+                            <h6 class="fw-bold mb-1">Alex R.</h6>
+                            <p class="text-muted mb-0">Random customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 aos-init aos-animate" data-aos="fade-left" data-aos-duration="900">
+                <div class="bg-black text-white rounded-4 shadow p-5 d-flex align-items-start gap-4 h-100">
+                    <img src="img/pp.jpg" alt="testimonial" class="img-fluid rounded-circle testimonial-img"
+                        style="height: 90px;">
+                    <div>
+                        <p class="text-secondary-emphasis pb-4 lead">"I had high hopes for my new smartphone from
+                            Snowell Electrics,The battery drains quickly, and I’ve experienced several software
+                            glitches. While the
+                            design
+                            is sleek and the camera is decent, I expected more reliability for the price I paid."</p>
+                        <div>
+                            <h6 class="fw-bold mb-1">Emily R.</h6>
+                            <p class="text-muted mb-0">Random customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mt-5 aos-init" data-aos="fade-up" data-aos-duration="600">
+                <a href="#" class="btn btn-light btn-lg">See All Review<i class="ri-arrow-right-line ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted" data-aos="fade-up" data-aos-duration="1000">
+
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center">
+            <!-- Left -->
+            <div class="  mx-auto">
+                
+                <!-- Left -->
+
+                <!-- Right -->
+                <div class="mt-3" style="font-size: 20px;">
+                    <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-twitter" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp0NmuQ3tEkg0ANXbQZN2BxSMCzfdoVIeWg4UlYivKGyfaFukHJElZSVG7d2incy5cpxFhF7&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-821940488%3A1705991549232520&theme=glif"
+                        target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-google" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-instagram" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://github.com/login" target="_blank" class="me-4 text-reset" target="_blank">
+                        <i class="fab fa-github" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                </div>
+            </div> 
+                <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4 col-sm-6">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i><img src="img/llg.jpg" style="width: 35px; height: 35px;" alt="" srcset=""> </i>
+                            <span style="color: rgba(13,110,253,255);">Snowell</span> Electric
+                        </h6>
+                        <p>
+                            Our experienced team is dedicated to providing exceptional customer service, ensuring that
+                            you get the
+                            right
+                            lighting solutions for your needs. Whether you’re looking to brighten up your home or office
+                            space, we’ve
+                            got
+                            the perfect LED lights for you.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 col-sm-6">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links <br><i class="fa-solid fa-minus"></i>
+                        </h6>
+                        <p>
+                            <a href="product.html" class="footer-link">Products</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="footer-link">About Us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="footer-link">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-4 col-sm-6">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Email <br><i class="fa-solid fa-minus"></i>
+                        </h6>
+                        <p>For More Feedback</p>
+                        <input type="email" name="" class="form-control mx-auto" id="" placeholder="Email"
+                            style="background-color: white; border-radius: 8px; width: 300px;">
+                        <button class="btn mt-3 btn-outline-primary">Send</button>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="project1.html"><span style="color: rgba(13,110,253,255);">Snowell</span>
+            Electric</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        for (var i = 1; i <= 1000; i++) {
+            (function (index) {
+                setTimeout(function () {
+                    document.getElementById('usercount').innerHTML = index;
+                }, index * 3);
+            })(i);
+        }
+    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

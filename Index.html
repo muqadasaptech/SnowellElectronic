@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowell Electric</title>
+    <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/llg.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        /* marquee */
+        .marquee-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            color: #37b6ff;
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+        .footer-link {
+            color: white;
+            transition: all ease-in-out 0.5s;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: rgb(13, 110, 253);
+
+        }
+
+        .navbar {
+            --bs-navbar-toggler-border-color: #37b6ff;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2855, 182, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+
+        .fab {
+
+            transform: rotateX(360deg);
+            transition: transform 0.5s;
+            display: inline-block;
+        }
+
+        .fab:hover {
+            transform: rotateX(0deg);
+        }
+
+        .btn-blue {
+            background-color: rgb(13, 110, 253);
+            border: NONE;
+            color: white;
+        }
+
+        .btn-blue:hover {
+            background-color: rgba(13, 109, 253, 0.801);
+            color: white;
+        }
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- Nav bar Start -->
+    <nav id="nav" class="navbar navbar-expand-lg bg-black">
+        <div class="container" id="container">
+            <img src="img/llg.jpg" style="height: 55px; margin: 5px; " alt="">
+            <p style="font-weight: bolder; font-size: 25px; margin-top: 20px; color: rgb(13,110,253)">Snowell <span
+                    style="color: white;">Electric</span></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center abc" id="navbarSupportedContent">
+                <ul class="nav justify-content-center " id="nav-links">
+                    <li class="align-content-center nav-item">
+                        <a class="nav-link active text-center" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="contact.html">Contact Us</a>
+                    </li>
+            </div>
+        </div>
+
+        <!-- usercount -->
+        <button type="button" class="rounded-circle bg-transparent border-0 d-none d-lg-block mx-5 position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(13,110,253)"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+            <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </nav>
+    <!-- Nav Bar End-->
+
+    <!-- banner img start -->
+    <div class="bg-black text-white">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7 col-12 pb-5">
+                    <div class="text-center text-md-start">
+                        <div class="mb-5">
+                            <h5 class="fw-semibold text-white-50 pb-2 aos-init" data-aos="fade-right"
+                                data-aos-duration="400">From
+                                89,000/-</h5>
+                            <h1 class="fw-bold display-3 aos-init" data-aos="fade-right" data-aos-duration="500"
+                                style="color: rgb(13,110,253)">PEL
+                                Refrigerator
+                                <span style="color: white;">Glass Door</span>
+                            </h1>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+                            <a href="contact.html" class="btn btn-blue btn-lg  aos-init" data-aos="fade-up"
+                                data-aos-duration="500">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 aos-init" data-aos="fade-up" data-aos-duration="600">
+                    <img src="img/zz1.png" alt="hero-header" class="img-fluid d-block mx-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-auto pb-5">
+            <div class="row mt-auto pb-4">
+                <div class="  rounded-4 p-4  border-dark mx-1 mx-md-0 cs-shadow " style=" backdrop-filter: blur(5px);">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="500">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-truck-line ri-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Free Delivery</h6>
+                                    <p class="small text-white-50 mb-0">Free Home Delivery on all Contact</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="600">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-hand-coin-line ri-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">100% Fast Services</h6>
+                                    <p class="small text-white-50 mb-0">Yours in 2 Days You will get the products.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="700">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-time-line ri-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">Available 24/7</h6>
+                                    <p class="small text-white-50 mb-0">Contact us 24 hours a day</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="800">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="ri-secure-payment-line ri-2x"></i>
+                                <div>
+                                    <h6 class="fw-bold mb-1">100% Payment Secure</h6>
+                                    <p class="small text-white-50 mb-0">Your payment are safe with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner img End -->
+
+    <!-- product gallery start -->
+    <div class=" py-5 category">
+        <div class="container py-4">
+            <div class="row g-4">
+                <div class="col-lg-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card border-0 rounded-4 shadow h-60 drones"
+                        style="background-color: black; border-radius: 30px;">
+                        <img src="img/zza.jpg" class="card-img p-4 my-4" alt="" style="height: 500px;">
+                        <div class="card-img-overlay p-4.5">
+                            <h5 class="card-title fw-bold text-black"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 h-100">
+                    <div class="h-100">
+                        <div class="card border-0 rounded-4 shadow mb-4 laptops aos-init" data-aos="fade-up"
+                            data-aos-duration="700" style="background-color: black; border-radius: 30px;">
+                            <img src="img/xxs.jpg" class="card-img w-50 d-block mx-auto py-5" alt=""
+                                style=" height: 300px;">
+                            <div class="card-img-overlay p-4.5">
+                            </div>
+                        </div>
+                        <div class="row g-4">
+                            <div class="col-lg-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="800">
+                                <div class="card border-0 rounded-4 shadow h-100 smartphones"
+                                    style="background-color: black; border-radius: 30px;">
+                                    <img src="img/xss.jpg" class="card-img w-75 d-block mx-auto pt-5" alt="">
+                                    <div class="card-img-overlay p-4.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="900">
+                                <div class="card border-0 rounded-4 shadow h-100 gaming"
+                                    style="background-color: black; border-radius: 30px;">
+                                    <img src="img/zzz.webp" class="card-img w-65 d-block ms-auto p-2 " alt="gaming"
+                                        style="height: 200px;">
+                                    <div class="card-img-overlay p-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product gallery end -->
+
+    <!-- content-img start -->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-white rounded-4 p-5"
+                        style="background-color: #242424; border-radius: 40px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;">
+                        <div class="row align-items-center g-4 p-4">
+                            <div class="col-lg-6 col-12 order-1 order-lg-0">
+                                <div class="text-center text-md-start mb-5 aos-init" data-aos="fade-up"
+                                    data-aos-duration="600">
+                                    <h1 class="fw-bold display-4 pb-2"><span
+                                            style="color: rgba(13,110,253,255);">Grand</span> Offer</h1>
+                                    <p class="lead fw-bold">Up to 50% OFF</p>
+                                    <p class="text-white-50 lead">Dawlance Elegance X 1 Ton
+                                        Inverter Split AC <br>AC : Inverter Mono Split <br>
+                                        Cooling Capacity (Btu/h) : 12000 BTU/h <br>
+                                        Function : Reversible
+                                        Self Cleaning : Yes <br><br><span style="font-weight: bolder; color: white;">Rs.
+                                            150,000/-</span></p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-md-start justify-content-center gap-3 aos-init"
+                                    data-aos="fade-up" data-aos-duration="700">
+                                    <a href="contact.html" class="btn btn-blue btn-lg"
+                                        style=" border: 1px solid black;">Order
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 order-0 order-lg-1 aos-init" data-aos="fade-up"
+                                data-aos-duration="600">
+                                <img src="img/qq-removebg-preview.png" alt="vr" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-img end -->
+    <!-- cards start -->
+    <div class="pt-5">
+        <div class="container pb-4">
+            <div class="row align-items-center justify-content-between g-4 mb-5">
+                <div class="col-auto">
+                    <div>
+                        <h2 class="fw-bold aos-init" data-aos="fade-right" data-aos-duration="500">Trending Products
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-auto"><a href="product.html" class="btn btn-light btn-lg aos-init" data-aos=""
+                        data-aos-duration="600" style="background-color: rgba(13,110,253,255); color: white;">View
+                        All</a></div>
+            </div>
+            <div class="row g-4" style="box-sizing: border-box; ">
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img shop-item-card">
+                        <a href="#" class="overflow-hidden rounded-4"> <img src="img/gfc/f13.png" class="card-img-top"
+                                alt="products"> </a>
+                        <div class="card-body " style="margin-left: 5px;">
+                            <a href="#">
+                                <h5 class="card-title fw-semibold"
+                                    style="color: rgba(13,110,253,255); font-weight: bolder;">GFC AC-DC
+                                </h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">12,000/-</p>
+                            <small class="text-secondary-emphasis">Fan</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="600">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img shop-item-card">
+                        <a href="#" class="overflow-hidden rounded-4"> <img src="img/geyser/gy1.jpg"
+                                class="card-img-top" alt="products"> </a>
+                        <div class="card-body" style="margin-left: 5px;">
+                            <a href="#">
+                                <h5 class="card-title fw-semibold"
+                                    style="color: rgba(13,110,253,255); font-weight: bolder;">GF-708IN
+                                    Instant</h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">24,500/-</p>
+                            <small class="text-secondary-emphasis">Geyser</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="700">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img shop-item-card">
+                        <a href="contact.html" class="overflow-hidden rounded-4"> <img src="img/air-cooler/ac3.jpg"
+                                class="card-img-top" alt="products"> </a>
+                        <div class="card-body" style="margin-left: 5px;">
+                            <a href="#">
+                                <h5 class="card-title " style="color: rgba(13,110,253,255); font-weight: bolder;">
+                                    GF-7700 Grand</h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">30,000/-</p>
+                            <small class="text-secondary-emphasis">Air Cooler</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img shop-item-card h-80">
+                        <a href="#" class="overflow-hidden rounded-4"> <img src="img/xs.jpg" class="card-img-top"
+                                alt="products"> </a>
+                        <div class="card-body" style="margin-left: 5px;">
+                            <a href="#">
+                                <h5 class="card-title fw-semibold"
+                                    style="color: rgba(13,110,253,255); font-weight: bolder;">Gelinder
+                                </h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">5,000/-</p>
+                            <small class="text-secondary-emphasis">Machines</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 color-danger px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="900">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img shop-item-card h-90">
+                        <a href="#" class="overflow-hidden rounded-4"> <img src="img/lcd/a1.png" class="card-img-top"
+                                alt="products"> </a>
+                        <div class="card-body " style="margin-left: 5px;">
+                            <a href="#">
+                                <h5 class="card-title fw-semibold"
+                                    style="color: rgba(13,110,253,255); font-weight: bolder;">Titanium
+                                    65T QLED Grey</h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">249,000/-</p>
+                            <small class="text-secondary-emphasis">LCD TV</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 aos-init" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card bg-transparent border-2 rounded-0 zoom-img  shop-item-card">
+                        <a href="#" class="overflow-hidden rounded-4"> <img src="img/Refrigerators/rf66.jpeg"
+                                class="card-img-top" alt="products"> </a>
+                        <div class="card-body " style="margin-left: 5px;">
+                            <a href="contact.html">
+                                <h5 class="card-title fw-semibold"
+                                    style="color: rgba(13,110,253,255); font-weight: bolder;">Haier
+                                    Inverter Gray HDF-385IG</h5>
+                            </a>
+                            <p class="card-text text-dark-emphasis mb-2">90,000/-</p>
+                            <small class="text-secondary-emphasis">Deep Freezer</small>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 px-0">
+                            <a href="contact.html" class="btn btn-blue"
+                                style="margin-left: 5px; border-radius: 10px; ">Order
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards end -->
+
+    <!-- logo img start -->
+    <h1 class="text-center fw-bold mt-5" style=" font-weight: bold; font-size: xx-large; color: rgba(13,110,253,255);">
+        Shop By Brands</h1>
+    <p class="text-center fw-bold">It Companies work with us</p>
+    <div class="container-fluid fw-bold "
+        style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: rgb(0, 0, 0);">
+        <div class="row">
+            <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="fade-right">
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo3.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="130px">
+                        <div class="card-body">
+                            <br>
+                            <h4 class="card-text text-center">Dawlance Electronics</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo2.jpeg" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Orient Electronic </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo7.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Philips Electronic </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo8.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Dell Electronic </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo9.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Sony Electronic </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/loo.jpg" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="140px">
+                        <div class="card-body">
+                            <br>
+                            <h4 class="card-text text-center">G.F.C Fans Electronic
+                            </h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo4.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Haier Electronic </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo5.png" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Pel Electronics </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class=" h-100">
+                        <img src="img/gfc/logo6.jpg" class="rounded mx-auto d-block" alt="..." height="100px"
+                            width="150px">
+                        <div class="card-body">
+                            </h4>
+                            <br>
+                            <h4 class="card-text text-center">Qist Bazaar Electronics </h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo img end -->
+
+    <!-- Marquee -->
+
+    <div class="marquee-container" id="marqueeContainer">
+        <div class="marquee">
+            🎉 Big Sale Alert! 🎉 Enjoy up to 50% OFF on all products! Shop now and grab your favorites before they're
+            gone! 🛒✨
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-lg-start  text-muted" data-aos="fade-up" data-aos-duration="1000"
+        style="background-color: black;">
+
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center">
+            <!-- Left -->
+            <div class=" mx-auto">
+
+                <!-- Left -->
+
+                <!-- Right -->
+                <div class="mt-3" style="font-size: 20px;">
+                    <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-twitter" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp0NmuQ3tEkg0ANXbQZN2BxSMCzfdoVIeWg4UlYivKGyfaFukHJElZSVG7d2incy5cpxFhF7&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-821940488%3A1705991549232520&theme=glif"
+                        target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-google" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-instagram" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" class="me-4 text-reset">
+                        <i class="fab fa-linkedin" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                    <a href="https://github.com/login" target="_blank" class=" me-4 text-reset">
+                        <i class="fab fa-github" style="color: rgb(13, 110, 253);"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4 col-sm-6">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i><img src="img/llg.jpg" style="width: 35px; height: 35px;" alt="" srcset=""> </i>
+                            <span style="color: rgba(13,110,253,255);">Snowell</span> Electric
+                        </h6>
+                        <p>
+                            Our experienced team is dedicated to providing exceptional customer service, ensuring that
+                            you get the
+                            right
+                            lighting solutions for your needs. Whether you’re looking to brighten up your home or office
+                            space, we’ve
+                            got
+                            the perfect LED lights for you.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 col-sm-6">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links <br><i class="fa-solid fa-minus"></i>
+                        </h6>
+                        <p>
+                            <a href="product.html" class="footer-link">Products</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="footer-link">About Us</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="footer-link">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-3 col-xl-2 mx-auto mb-4 col-sm-6">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Email <br><i class="fa-solid fa-minus"></i>
+                        </h6>
+                        <p>For More Feedback</p>
+                        <input type="email" name="" class="form-control mx-auto" id="" placeholder="Email"
+                            style="background-color: white; border-radius: 8px; width: 300px;">
+                        <button class="btn mt-3 btn-outline-primary">Send</button>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2024 Copyright:
+        <a class="text-reset fw-bold" href="project1.html"><span style="color: rgba(13,110,253,255);">Snowell</span>
+            Electric</a>
+    </div>
+    <!-- Copyright -->
+
+    <!-- Footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        for (var i = 1; i <= 1000; i++) {
+            (function (index) {
+                setTimeout(function () {
+                    document.getElementById('usercount').innerHTML = index;
+                }, index * 3);
+            })(i);
+        }
+    </script>
+    <script>
+        const marqueeContainer = document.getElementById('marqueeContainer');
+        const footer = document.getElementById('footer');
+
+        function checkMarqueePosition() {
+            const footerRect = footer.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            if (footerRect.top <= windowHeight) {
+                marqueeContainer.style.opacity = '0';
+            } else {
+                marqueeContainer.style.opacity = '1';
+            }
+        }
+
+        window.addEventListener('scroll', checkMarqueePosition);
+    </script>
+</body>
+
+</html>

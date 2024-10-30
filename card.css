@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: rgb(255, 255, 255);
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 10%;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+.header a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1.5%;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.header a:hover {
+    position: relative;
+    bottom: 5px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 150px 0;
+}
+
+.content {
+    margin: 30px;
+    min-width: 15%;
+    text-align: center;
+    height: 10%;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: rgb(255, 255, 255);
+}
+
+.content:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.content img {
+    width: 300px;
+    height: 300px;
+
+    padding: 20px;
+}
+
+.content h3 {
+
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.content p {
+    color: black;
+    margin: 10px;
+}
+
+.content h6 {
+    font-size: 26px;
+    color: black;
+    margin: 0;
+}
+
+.content button {
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.buy3 {
+    background: rgba(0, 0, 0, 0.918);
+}
+
+.card{
+    box-sizing: border-box;
+    height: 300px;
+    background-color: aqua;
+    width: 20%;
+}

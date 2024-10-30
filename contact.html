@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snowell Electric</title>
+  <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/logo-removebg-preview.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="img/llg.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    
+    .navbar {
+      --bs-navbar-toggler-border-color: #37b6ff;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2855, 182, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .footer-link {
+            color: white;
+            transition: all ease-in-out 0.5s;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: rgb(13,110,253);
+
+        }
+
+        .fab {
+        
+        transform: rotateX(360deg);
+        transition: transform 0.5s;
+        display: inline-block;
+    }
+
+    .fab:hover {
+        transform: rotateX(0deg);
+    }
+
+        .btn-blue{
+            background-color: rgb(13,110,253);
+            border: NONE;
+            color: white;
+        }
+
+        .btn-blue:hover{
+            background-color: rgba(13, 109, 253, 0.801);
+            color: white;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- Nav bar Start -->
+ <nav id="nav" class="navbar navbar-expand-lg bg-black" style="background-color: black;">
+        <div class="container" id="container">
+            <img src="img/llg.jpg" style="height: 55px; margin: 5px; " alt="">
+            <p style="font-weight: bolder; font-size: 25px; margin-top: 20px; color: rgb(13,110,253)">Snowell <span
+                    style="color: white;">Electric</span></p>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="nav justify-content-center " id="nav-links">
+                    <li class="align-content-center nav-item">
+                        <a class="nav-link active text-center" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="contact.html">Contact Us</a>
+                    </li>
+            </div>
+        </div>
+
+        <!-- usercount -->
+        <button type="button" class="rounded-circle bg-transparent border-0 d-none d-lg-block mx-5 position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="rgb(13,110,253)"
+                class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+            </svg>
+            <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </nav>
+  <!-- Nav Bar End-->
+
+  <div class=" text-white py-5" style="background-color: rgb(0, 0, 0); ">
+    <div class="container">
+          <div class="text-center mb-5">
+            <h1 class="fw-bold display-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600"><span style="color: rgba(13,110,253,255);">Contact</span> Us
+            </h1>
+          </div>
+        </div>
+      </div>
+  <div class="container-fluid pb-5" style="background-color: rgb(0, 0, 0);">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 col-md-6 text-center">
+          <img src="img/off1..jpg" id="bulb" onmouseover="after()" onmouseout="before()" alt=""
+            class="rounded img-fluid" style="width:350px; height: 450px; ">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="fw-bold pb-2" style="color: white;">Send us a message</h2>
+          <form class="row g-4">
+            <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-duration="500">
+              <input type="text" class="form-control bg-transparent py-2" placeholder="First Name">
+            </div>
+            <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-duration="600">
+              <input type="text" class="form-control bg-transparent py-2" placeholder="last Name">
+            </div>
+            <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-duration="700">
+              <input type="email" class="form-control bg-transparent py-2" placeholder="Emial Address">
+            </div>
+            <div class="col-md-6 aos-init" data-aos="fade-up" data-aos-duration="800">
+              <input type="tel" class="form-control bg-transparent py-2" placeholder="Your phone Number"
+                id="inputNumber"> 
+            </div>
+            <div class="col-12 aos-init" data-aos="fade-up" data-aos-duration="900">
+              <input type="tel" class="form-control bg-transparent py-2" placeholder="CNIC No">
+            </div>
+            <div class="col-12 aos-init" data-aos="fade-up" data-aos-duration="1000"><textarea
+                class="form-control bg-transparent py-2" rows="6" placeholder="Message"></textarea></div>
+            <div class="col-12 aos-init" data-aos="fade-up" data-aos-duration="1100"><button type="submit"
+                class="btn  btn-lg btn-blue rounded-0x">Send Message</button></div>
+          </form>
+        </div>
+        <div class="col-12 mt-5">
+          <h1 class="fw-bold mb-5 text-white display-3 text-center">Shop Outlet</h1>
+          <iframe style="filter: invert(100); height: 350px; width: 100%;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14473.974521833783!2d67.0223113026026!3d24.91524835706394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fbd469d9bcd%3A0x749325c6e39952f3!2sNazimabad%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1705564264212!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start  text-muted" data-aos="fade-up" data-aos-duration="1000" style="background-color: black;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center">
+        <!-- Left -->
+        <div class=" mx-auto">
+            
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="mt-3" style="font-size: 20px;">
+                <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f" style="color: rgb(13, 110, 253);"></i>
+                </a>
+                <a href="https://twitter.com/i/flow/login" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-twitter" style="color: rgb(13, 110, 253);"></i>
+                </a>
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp0NmuQ3tEkg0ANXbQZN2BxSMCzfdoVIeWg4UlYivKGyfaFukHJElZSVG7d2incy5cpxFhF7&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-821940488%3A1705991549232520&theme=glif"
+                    target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-google" style="color: rgb(13, 110, 253);"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram" style="color: rgb(13, 110, 253);"></i>
+                </a>
+                <a href="https://www.linkedin.com/login" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-linkedin" style="color: rgb(13, 110, 253);"></i>
+                </a>
+                <a href="https://github.com/login" target="_blank" class=" me-4 text-reset " target="_blank">
+                    <i class="fab fa-github" style="color: rgb(13, 110, 253);"></i>
+                </a>
+            </div>
+          </div>
+            <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4 col-sm-6">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i><img src="img/llg.jpg" style="width: 35px; height: 35px;" alt="" srcset=""> </i>
+                        <span style="color: rgba(13,110,253,255);">Snowell</span> Electric
+                    </h6>
+                    <p>
+                        Our experienced team is dedicated to providing exceptional customer service, ensuring that
+                        you get the
+                        right
+                        lighting solutions for your needs. Whether you’re looking to brighten up your home or office
+                        space, we’ve
+                        got
+                        the perfect LED lights for you.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4 col-sm-6">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links <br><i class="fa-solid fa-minus"></i>
+                    </h6>
+                    <p>
+                        <a href="product.html" class="footer-link" >Products</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="footer-link">About Us</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="footer-link">Contact Us</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-3 col-xl-2 mx-auto mb-4 col-sm-6">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Email <br><i class="fa-solid fa-minus"></i>
+                    </h6>
+                    <p>For More Feedback</p>
+                    <input type="email" name="" class="form-control mx-auto" id="" placeholder="Email"
+                        style="background-color: white; border-radius: 8px; width: 300px;">
+                        <button class="btn mt-3 btn-outline-primary">Send</button>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+
+</footer>
+<!-- Footer -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="Index.html"><span style="color: rgba(13,110,253,255);">Snowell</span> Electric</a>
+  </div>
+  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script>
+    function before() {
+      document.getElementById("bulb").src = "img/off1..jpg"
+    }
+    function after() {
+      document.getElementById("bulb").src = "img/onn1..jpg"
+    }
+  </script>
+  <script src="vender/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="vender/jquery/jquery-3.6.4.min.js"></script>
+  <script src="vender/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+      for (var i = 1; i <= 1000; i++) {
+        (function (index) {
+          setTimeout(function () {
+            document.getElementById('usercount').innerHTML = index;
+          }, index * 3);
+        })(i);
+      }
+    </script>
+</body>
+
+</html>

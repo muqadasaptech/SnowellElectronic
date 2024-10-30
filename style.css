@@ -1,0 +1,19 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+#nav-links a{
+  color: white;
+  font-weight: bolder;
+  font-family:'Genos', sans-serif;
+  font-size: 23px;
+  }
+.page-links{
+  color: black;
+}
+#nav-links a:hover{
+ 
+  color: rgba(13,110,253,255);
+  bottom: 5px;
+
+}
